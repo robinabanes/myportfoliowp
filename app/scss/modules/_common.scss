@@ -1,0 +1,68 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+   overflow-x: hidden;
+   font-size: 62.5%;
+}
+
+body {
+	position: relative;
+	font-size: 16px;
+	padding: 0;
+	margin: 0;
+	background: $color-white;
+	font-family: $font-notosans;
+	color: $color-black;
+	background: url('../../dist/images/bg-fixed.png');
+	background-position: center;
+	-webkit-text-size-adjust: 100%;
+}
+
+.container {
+	max-width: 87.5em;
+	width: 100%;
+	margin: 0 auto;
+	padding: 0 50px;
+}
+
+.clearfix::after { 
+   content: " ";
+   display: block; 
+   height: 0; 
+   clear: both;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin: 0;
+	padding: 0;
+}
+
+a,button {
+	outline: none;
+}
+
+.pc {
+	@include breakpoint(pc) {
+		display: inherit;
+	}
+	@include breakpoint(sp) {
+		display: none;
+	}
+}
+
+.sp {
+	@include breakpoint(pc) {
+		display: none;
+	}
+	@include breakpoint(sp) {
+		display: inherit;
+	}
+}

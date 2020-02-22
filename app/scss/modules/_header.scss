@@ -1,0 +1,28 @@
+.header {
+	border-bottom: 1px solid #ddd;
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 0;
+    }
+
+    &__logo {
+    	font-weight: bold;
+    	font-size: 16px;
+    	margin: 0;
+    }
+
+    &__menu {}
+
+    &__items {
+        display: inline-flex;
+    }
+    &__item {
+    	font-size: 14px;
+    	margin-right: 30px;
+    	&:last-of-type {
+    		margin-right: 0;
+    	}
+    }
+}
